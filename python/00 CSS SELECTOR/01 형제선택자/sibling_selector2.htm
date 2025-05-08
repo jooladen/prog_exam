@@ -1,0 +1,35 @@
+<!-- https://ssocoit.tistory.com/274 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Document</title>
+        <style>
+            .ssoco_class + .next {
+                color: red;
+            }
+            .ssoco_class ~ .next {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="ssoco_class"></div>
+            <div class="next">hihi2</div>
+            <h2 class="ssoco">하이하이</h2>
+            <h2 class="next">hihi</h2>
+            <h2 class="next">hihi2</h2>
+        </div>
+        <div class="ssoco_class">
+            <div class="next">hihi2</div>
+            <h2 class="ssoco">하이하이</h2>
+            <h2 class="next">hihi</h2>
+            <h2 class="next">hihi2</h2>
+        </div>
+
+    </body>
+
+</html>

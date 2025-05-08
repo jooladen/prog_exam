@@ -1,0 +1,327 @@
+[2025-04-30 10:54:19] === Windows 시간 동기화 자동화 시작 ===
+
+[2025-04-30 10:54:20] >>> 명령어: net stop w32time
+[출력]
+Windows Time 서비스를 멈춥니다..
+Windows Time 서비스를 잘 멈추었습니다.
+[에러]
+
+
+[2025-04-30 10:54:20] >>> 명령어: w32tm /unregister
+[출력]
+W32Time 등록이 취소되었습니다.
+[에러]
+
+
+[2025-04-30 10:54:20] >>> 명령어: w32tm /register
+[출력]
+W32Time이 성공적으로 등록되었습니다.
+[에러]
+
+
+[2025-04-30 10:54:22] >>> 명령어: net start w32time
+[출력]
+Windows Time 서비스를 시작합니다..
+Windows Time 서비스가 잘 시작되었습니다.
+[에러]
+
+
+[2025-04-30 10:54:22] >>> 명령어: w32tm /config /manualpeerlist:"time.windows.com,0x1 pool.ntp.org,0x1 time.nist.gov,0x1" /syncfromflags:manual /reliable:NO /update
+[출력]
+명령이 성공적으로 완료되었습니다.
+[에러]
+
+
+[2025-04-30 10:54:38] >>> 명령어: w32tm /resync /rediscover
+[출력]
+로컬 컴퓨터에 다시 동기화 명령을 보내는 중
+사용 가능한 시간 데이터가 없어 컴퓨터가 동기화하지 못했습니다.
+[에러]
+
+
+[2025-04-30 10:54:38] >>> 명령어: w32tm /query /status
+[출력]
+윤초 조정: 3(동기화되지 않음)
+계층: 0(지정되지 않음)
+정밀도: -23(틱당 119.209ns)
+루트 지연: 0.0000000s
+루트 분산: 0.0000000s
+참조 ID: 0x00000000(지정되지 않음)
+마지막으로 동기화한 시간: 지정되지 않음
+원본: Local CMOS Clock
+폴링 간격: 10(1024s)
+[에러]
+
+
+[2025-04-30 10:54:38] >>> 명령어: w32tm /query /configuration
+[출력]
+[구성]
+
+EventLogFlags: 2 (로컬)
+AnnounceFlags: 10 (로컬)
+TimeJumpAuditOffset: 28800 (로컬)
+MinPollInterval: 10 (로컬)
+MaxPollInterval: 15 (로컬)
+MaxNegPhaseCorrection: 54000 (로컬)
+MaxPosPhaseCorrection: 54000 (로컬)
+MaxAllowedPhaseOffset: 1 (로컬)
+
+FrequencyCorrectRate: 4 (로컬)
+PollAdjustFactor: 5 (로컬)
+LargePhaseOffset: 50000000 (로컬)
+SpikeWatchPeriod: 900 (로컬)
+LocalClockDispersion: 10 (로컬)
+HoldPeriod: 5 (로컬)
+PhaseCorrectRate: 1 (로컬)
+UpdateInterval: 360000 (로컬)
+
+
+[시간 공급자]
+
+NtpClient (로컬)
+DllName: C:\Windows\SYSTEM32\w32time.DLL (로컬)
+Enabled: 1 (로컬)
+InputProvider: 1 (로컬)
+AllowNonstandardModeCombinations: 1 (로컬)
+ResolvePeerBackoffMinutes: 15 (로컬)
+ResolvePeerBackoffMaxTimes: 7 (로컬)
+CompatibilityFlags: 2147483648 (로컬)
+EventLogFlags: 1 (로컬)
+LargeSampleSkew: 3 (로컬)
+SpecialPollInterval: 32768 (로컬)
+Type: NTP (로컬)
+NtpServer: time.windows.com,0x1 pool.ntp.org,0x1 time.nist.gov,0x1 (로컬)
+
+NtpServer (로컬)
+DllName: C:\Windows\SYSTEM32\w32time.DLL (로컬)
+Enabled: 0 (로컬)
+InputProvider: 0 (로컬)
+[에러]
+
+
+[2025-04-30 10:54:38] >>> 명령어: w32tm /query /peers
+[출력]
+#피어: 6
+
+피어: pool.ntp.org,0x1
+상태: 활성
+남은 시간: 32751.8652589s
+모드: 3 (클라이언트)
+계층: 0(지정되지 않음)
+피어폴링 간격: 0(지정되지 않음)
+호스트폴링 간격: 10(1024s)
+
+피어: pool.ntp.org,0x1
+상태: 활성
+남은 시간: 32751.9757206s
+모드: 3 (클라이언트)
+계층: 0(지정되지 않음)
+피어폴링 간격: 0(지정되지 않음)
+호스트폴링 간격: 10(1024s)
+
+피어: pool.ntp.org,0x1
+상태: 활성
+남은 시간: 32752.0808374s
+모드: 3 (클라이언트)
+계층: 0(지정되지 않음)
+피어폴링 간격: 0(지정되지 않음)
+호스트폴링 간격: 10(1024s)
+
+피어: pool.ntp.org,0x1
+상태: 활성
+남은 시간: 32752.1858195s
+모드: 3 (클라이언트)
+계층: 0(지정되지 않음)
+피어폴링 간격: 0(지정되지 않음)
+호스트폴링 간격: 10(1024s)
+
+피어: time.nist.gov,0x1
+상태: 활성
+남은 시간: 32751.8654658s
+모드: 3 (클라이언트)
+계층: 0(지정되지 않음)
+피어폴링 간격: 0(지정되지 않음)
+호스트폴링 간격: 10(1024s)
+
+피어: time.windows.com,0x1
+상태: 활성
+남은 시간: 32751.8655512s
+모드: 3 (클라이언트)
+계층: 0(지정되지 않음)
+피어폴링 간격: 0(지정되지 않음)
+호스트폴링 간격: 10(1024s)
+[에러]
+
+
+[2025-04-30 10:54:38] === 작업 완료 ===
+
+
+[2025-04-30 11:00:20] === Windows 시간 동기화 자동화 시작 ===
+
+[2025-04-30 11:00:21] >>> 명령어: net stop w32time
+[출력]
+Windows Time 서비스를 멈춥니다..
+Windows Time 서비스를 잘 멈추었습니다.
+[에러]
+
+
+[2025-04-30 11:00:21] >>> 명령어: w32tm /unregister
+[출력]
+W32Time 등록이 취소되었습니다.
+[에러]
+
+
+[2025-04-30 11:00:21] >>> 명령어: w32tm /register
+[출력]
+W32Time이 성공적으로 등록되었습니다.
+[에러]
+
+
+[2025-04-30 11:00:23] >>> 명령어: net start w32time
+[출력]
+Windows Time 서비스를 시작합니다..
+Windows Time 서비스가 잘 시작되었습니다.
+[에러]
+
+
+[2025-04-30 11:00:23] >>> 명령어: w32tm /config /manualpeerlist:"time.windows.com,0x1 pool.ntp.org,0x1 time.nist.gov,0x1" /syncfromflags:manual /reliable:NO /update
+[출력]
+명령이 성공적으로 완료되었습니다.
+[에러]
+
+
+[2025-04-30 11:00:24] >>> 명령어: net stop w32time
+[출력]
+Windows Time 서비스를 멈춥니다..
+Windows Time 서비스를 잘 멈추었습니다.
+[에러]
+
+
+[2025-04-30 11:00:26] >>> 명령어: net start w32time
+[출력]
+Windows Time 서비스를 시작합니다..
+Windows Time 서비스가 잘 시작되었습니다.
+[에러]
+
+
+[2025-04-30 11:00:42] >>> 명령어: w32tm /resync /rediscover
+[출력]
+로컬 컴퓨터에 다시 동기화 명령을 보내는 중
+사용 가능한 시간 데이터가 없어 컴퓨터가 동기화하지 못했습니다.
+[에러]
+
+
+[2025-04-30 11:00:42] === 작업 완료 ===
+
+
+[2025-04-30 11:07:24] === Windows 시간 동기화 자동화 시작 ===
+
+[2025-04-30 11:07:25] >>> 명령어: net stop w32time
+[출력]
+Windows Time 서비스를 멈춥니다..
+Windows Time 서비스를 잘 멈추었습니다.
+[에러]
+
+
+[2025-04-30 11:07:25] >>> 명령어: w32tm /unregister
+[출력]
+W32Time 등록이 취소되었습니다.
+[에러]
+
+
+[2025-04-30 11:07:25] >>> 명령어: w32tm /register
+[출력]
+W32Time이 성공적으로 등록되었습니다.
+[에러]
+
+
+[2025-04-30 11:07:27] >>> 명령어: net start w32time
+[출력]
+Windows Time 서비스를 시작합니다..
+Windows Time 서비스가 잘 시작되었습니다.
+[에러]
+
+
+[2025-04-30 11:07:27] >>> 명령어: w32tm /config /manualpeerlist:"time.windows.com,0x1 pool.ntp.org,0x1 time.nist.gov,0x1" /syncfromflags:manual /reliable:NO /update
+[출력]
+명령이 성공적으로 완료되었습니다.
+[에러]
+
+
+[2025-04-30 11:07:28] >>> 명령어: net stop w32time
+[출력]
+Windows Time 서비스를 멈춥니다..
+Windows Time 서비스를 잘 멈추었습니다.
+[에러]
+
+
+[2025-04-30 11:07:30] >>> 명령어: net start w32time
+[출력]
+Windows Time 서비스를 시작합니다..
+Windows Time 서비스가 잘 시작되었습니다.
+[에러]
+
+
+[2025-04-30 11:07:30] >>> 대기: 3초
+
+[2025-04-30 11:07:50] >>> 명령어: w32tm /resync /rediscover
+[출력]
+로컬 컴퓨터에 다시 동기화 명령을 보내는 중
+사용 가능한 시간 데이터가 없어 컴퓨터가 동기화하지 못했습니다.
+[에러]
+
+
+[2025-04-30 11:07:50] === 작업 완료 ===
+
+
+[2025-04-30 11:10:02] === Windows 시간 동기화 자동화 시작 ===
+
+[2025-04-30 11:10:03] >>> 명령어: net stop w32time
+[출력]
+Windows Time 서비스를 멈춥니다..
+Windows Time 서비스를 잘 멈추었습니다.
+[에러]
+
+
+[2025-04-30 11:10:03] >>> 명령어: w32tm /unregister
+[출력]
+W32Time 등록이 취소되었습니다.
+[에러]
+
+
+[2025-04-30 11:10:03] >>> 명령어: w32tm /register
+[출력]
+W32Time이 성공적으로 등록되었습니다.
+[에러]
+
+
+[2025-04-30 11:10:05] >>> 명령어: net start w32time
+[출력]
+Windows Time 서비스를 시작합니다..
+Windows Time 서비스가 잘 시작되었습니다.
+[에러]
+
+
+[2025-04-30 11:10:05] >>> 명령어: w32tm /config /manualpeerlist:"time.windows.com,0x1 pool.ntp.org,0x1 time.nist.gov,0x1" /syncfromflags:manual /reliable:NO /update
+[출력]
+명령이 성공적으로 완료되었습니다.
+[에러]
+
+
+[2025-04-30 11:10:06] >>> 명령어: net stop w32time
+[출력]
+Windows Time 서비스를 멈춥니다..
+Windows Time 서비스를 잘 멈추었습니다.
+[에러]
+
+
+[2025-04-30 11:10:09] >>> 명령어: net start w32time
+[출력]
+Windows Time 서비스를 시작합니다..
+Windows Time 서비스가 잘 시작되었습니다.
+[에러]
+
+
+[2025-04-30 11:10:09] === 작업 완료 ===
+
+

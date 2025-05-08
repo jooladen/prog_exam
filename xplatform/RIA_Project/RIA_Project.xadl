@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ADL version="1.1">
+  <TypeDefinition url="default_typedef.xml"/>
+  <GlobalVariables url="globalvars.xml"/>
+  <Application id="RIA_Project" codepage="utf-8" language="Korean" loginformurl="" loginformstyle="" windowopeneffect="" windowcloseeffect="" version="" tracemode="" themeid="default.xtheme">
+    <Layout>
+      <MainFrame id="mainframe" title="maintitle" defaultfont="" resizable="true" showtitlebar="true" showstatusbar="true" position="absolute 0 0 800 800">
+        <ChildFrame id="childframe" formurl="Base::Employees.xfdl" showtitlebar="false" showstatusbar="false" openeffect="" closeeffect=""/>
+      </MainFrame>
+    </Layout>
+    <ScreenInfo/>
+  </Application>
+</ADL>

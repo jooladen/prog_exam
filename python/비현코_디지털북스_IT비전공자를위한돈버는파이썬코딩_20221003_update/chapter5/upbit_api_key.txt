@@ -1,0 +1,2 @@
+이것을 지우고 Access_key를 넣어주세요
+이것을 지우고 Secret_key를 넣어주세요

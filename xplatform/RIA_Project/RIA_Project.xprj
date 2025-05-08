@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project active_adl="RIA_Project" version="1.1">
+  <TypeDefinition url="default_typedef.xml"/>
+  <GlobalVariables url="globalvars.xml"/>
+  <ADL id="RIA_Project" url="RIA_Project.xadl"/>
+  <Options positiontype="position2"/>
+</Project>

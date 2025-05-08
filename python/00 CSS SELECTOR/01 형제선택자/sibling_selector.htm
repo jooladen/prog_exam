@@ -1,0 +1,51 @@
+<!-- https://ssocoit.tistory.com/274 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 자손 결합자 */
+      .ssoco_class .ssoco_inside_class {
+        color: red;
+      }
+
+      /* 자식 결합자 */
+      .ssoco_class > span {
+        color: rgb(21, 226, 34);
+      }
+      .ssoco_class + .next {
+        color: red;
+      }
+      .ssoco_class ~ .next {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="ssoco_class">
+        ㅎㅇㅎㅇ
+        <h2 class="ssoco_inside_class">하이하이1</h2>
+        <span class="ssoco_inside_class">하이하이1</span>
+      </h1>
+      <div class="ssoco_class">
+        <h1>ㅎㅇㅎㅇ</h1>
+        <h2 class="ssoco_inside_class">하이하이2</h2>
+        <span>하이하이1</span>
+        <span class="ssoco_inside_class">하이하이3</span>
+      </div>
+      <h1 class="ssoco_class">ㅎㅇㅎㅇ</h1>
+      <h2 class="ssoco_inside_class">하이하이</h2>
+      <h2 class="next">hihi</h2>
+      <div class="ssoco_class">
+        <h2 class="next">hihi</h2>
+        <h2 class="ssoco">하이하이</h2>
+        <h2 class="next">hihi</h2>
+        <h2 class="next">hihi2</h2>
+      </div>
+    </div>
+  </body>
+</html>
