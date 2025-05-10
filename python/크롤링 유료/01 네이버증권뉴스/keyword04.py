@@ -76,7 +76,11 @@ params['hintKeywords']='IT'
 params['hintKeywords']='컴퓨터'
 params['hintKeywords']='파이썬'
 params['hintKeywords']='파이선'
-#params['hintKeywords']='CHATGPT개발'
+params['hintKeywords']='돈벌기'
+params['hintKeywords']='다이아'
+params['hintKeywords']='엘도라도'
+params['hintKeywords']='오팔레센스'
+params['hintKeywords']='디바인메트릭스'
 params['showDetail']=1
 
 
