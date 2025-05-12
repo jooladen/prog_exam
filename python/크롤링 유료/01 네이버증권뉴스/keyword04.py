@@ -48,6 +48,22 @@ params={}
 params['hintKeywords']='크롤링' 
 params['hintKeywords']='왕좌'
 params['hintKeywords']='VIP'
+params['hintKeywords']='좌석'
+params['hintKeywords']='찜'
+params['hintKeywords']='인증'
+params['hintKeywords']='SPRING'
+params['hintKeywords']='VUE'
+params['hintKeywords']='VUEJS'
+params['hintKeywords']='REACT'
+params['hintKeywords']='전자정부'
+params['hintKeywords']='프레임워크'
+params['hintKeywords']='FRAMEWORK'
+params['hintKeywords']='자바'
+params['hintKeywords']='JAVA'
+params['hintKeywords']='자바스크립트'
+params['hintKeywords']='JAVASCRIPT'
+params['hintKeywords']='ES6'
+
 params['showDetail']=1
 
 
@@ -244,7 +260,9 @@ for i in range(0, len(data_list)):
 
     # 데이터프레임 생성 및 엑셀로 저장
     df = pd.DataFrame(excel_rows)
-    save_path = f"keyword_analysis_{params['hintKeywords']}.xlsx"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    save_path = os.path.join(base_dir, "keyword", f"keyword_analysis_{params['hintKeywords']}.xlsx")
+    #save_path = f"keyword\keyword_analysis_{params['hintKeywords']}.xlsx"
     df.to_excel(save_path, index=False)
     print(f"\n✅ 엑셀 저장 완료: {save_path}")
 
