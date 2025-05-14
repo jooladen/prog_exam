@@ -62,7 +62,9 @@ params['hintKeywords']='자바'
 params['hintKeywords']='JAVA'
 params['hintKeywords']='자바스크립트'
 params['hintKeywords']='JAVASCRIPT'
-params['hintKeywords']='ES6'
+params['hintKeywords']='5차혁명'
+params['hintKeywords']='검색어'
+params['hintKeywords']='검색'
 
 params['showDetail']=1
 
