@@ -64,7 +64,7 @@ params['hintKeywords']='자바스크립트'
 params['hintKeywords']='JAVASCRIPT'
 params['hintKeywords']='5차혁명'
 params['hintKeywords']='검색어'
-params['hintKeywords']='검색'
+params['hintKeywords']='캠타시아'
 
 params['showDetail']=1
 
@@ -176,12 +176,15 @@ def analyze_keyword_density(result, monthly_search_volume):
 display = 100
 sort = 'date'
 
+#print("data_list >>> ", data_list)
+#print("-"*50)
 print("len(data_list) >>> ", len(data_list))
 
 
 excel_rows = [] 
 
-for i in range(0, len(data_list)):
+#for i in range(0, len(data_list)):
+for i in range(0, 3):
 #for i in range(0, len(keyword_lists)):    
     #print(i)
     pcCnt = data_list[i]['monthlyPcQcCnt']
@@ -223,11 +226,16 @@ for i in range(0, len(data_list)):
         
 
         result = json.loads(response_body.decode('utf-8'))
-        # print(" result >>> ", result)
+
+        cnt = 0
+        print(" result >>> ", result)
+        print("-"*50)
+        
         # print("count >>> ", len(result))
         # print("count___ >>> ", len(result['items']))
         # print(result)
         search_result_mount.append(result['total'])
+        print("누적월검색수 >>> ", result['total'])
 
         #테스트용
         # for j in range(0, len(result['items'])):
@@ -251,6 +259,7 @@ for i in range(0, len(data_list)):
             "PC 검색량": pcCnt,
             "MO 검색량": mobileCnt,
             "총 검색량": pcCnt + mobileCnt,
+            "누적 검색량": result['total'],
             "월간 발행 건수": monthly_post,
             "포화도 (%)": percent,
             "판단": statusMsg
