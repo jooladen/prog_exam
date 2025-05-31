@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Without JSX</title>
+    <!-- React, ReactDOM CDN 불러오기 -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  </head>
+  <body>
+    <!-- 여기에 React가 그려질 거예요 -->
+    <div id="root"></div>
+
+    <script>
+      // App 컴포넌트 정의
+      const App = () => {
+        return React.createElement('h1', null, 'Hello, React without JSX!');
+      };
+
+      // root에 렌더링
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(React.createElement(App));
+    </script>
+  </body>
+</html>
