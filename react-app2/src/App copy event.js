@@ -1,5 +1,8 @@
 import './App.css';
-import { useState } from 'react';
+
+
+
+
 
 function Article(p){
   return (
@@ -47,7 +50,6 @@ function Header(props){
   );
 }
 
-//내가 클릭한 <a> 태그의 id를 가져오려면 → event.target.id
 function Nav(props){
   const list = []
 
@@ -73,48 +75,21 @@ function Nav(props){
 }
 
 function App() {
-  //const mode = 'WELCOME';
-  //지역변수를 상태로 변경한다.
-  const _mode = useState('WELCOME');
-
-  //useStat Hook은 배열을 리턴
-  //0 : 상태의 값 1 : 상태를 변경하는 함수
-  console.log("_mode >>>", _mode);
-
-  //const mode = _mode[0];
-  //const setMode = _mode[1];
-
-  const [mode, setMode] = useState('WELCOME');
-
-  
-
   const topics = [
     {"id" : 1,  "title" : 'html', "body" : 'html is ...'},
     {"id" : 2,  "title" : 'css', "body" : 'html is ...'},
     {"id" : 3,  "title" : 'javascript', "body" : 'javascript is ...'},
   ]
 
-  let content = null;
-
-  if(mode === 'WELCOME'){
-    content = <Article title="Welcome" body='hello, WEB'></Article>
-  } else if(mode === 'READ'){
-    content = <Article title="Read" body='hello, Read'></Article>
-  }
-
-  //setMode가 실행되면 
-  // App컴포넌트가 다시 실행된다.
   return (
     <div>
       <Header title="REACT" onChangeMode={()=>{
-        //mode = "WELCOME";
-        setMode("WELCOME")
+        alert('Header');
       }}></Header>
       <Nav data={topics} onChangeMode={id=>{
-        //mode = "READ";
-        setMode('READ');
+        alert(id);
       }}></Nav> {/* 문자열은 위처럼, 배열객체를 던질때는 {} */}
-      {content}
+      <Article title="Welcome" body='hello, WEB'></Article>
     </div>
   );
 
