@@ -1,0 +1,19 @@
+✅ 예제 DAG 없애는 방법 
+
+CTRL + C 로 종료
+
+
+62라인쯤....
+
+#AIRFLOW__CORE__LOAD_EXAMPLES: 'true'
+주석처리후
+
+이렇게 바꾼다
+AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+
+그리고 다시 실행
+
+docker compose -f docker-compose.yaml up
+
+
+
