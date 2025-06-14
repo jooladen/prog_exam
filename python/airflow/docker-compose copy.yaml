@@ -17,13 +17,11 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: 'a_random_fernet_key_generated'   # 수정 필요
-      AIRFLOW__WEBSERVER__SECRET_KEY: 'my_super_secret_key_123'    # ★ 중요!
+      AIRFLOW__CORE__FERNET_KEY: ''
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
       AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     volumes:
       - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs           # ★ 로그 공유
     ports:
       - "8888:8080"
     entrypoint: /bin/bash
@@ -41,11 +39,9 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      AIRFLOW__CORE__FERNET_KEY: 'a_random_fernet_key_generated'   # 동일해야 함
-      AIRFLOW__WEBSERVER__SECRET_KEY: 'my_super_secret_key_123'    # 동일해야 함
+      AIRFLOW__CORE__FERNET_KEY: ''
     volumes:
       - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs           # ★ 로그 공유
     command: bash -c "exec airflow scheduler"
 
 volumes:
