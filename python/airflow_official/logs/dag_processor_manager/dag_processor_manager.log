@@ -1,0 +1,209 @@
+[2025-06-14T10:52:47.449+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-06-14T10:52:47.451+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-06-14T10:52:47.451+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-06-14T10:52:47.452+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-06-14T10:52:47.474+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-06-14T10:52:47.594+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/hello_1min.py      50  0.05s             0           0
+/opt/airflow/dags/hello_dag.py       51  0.04s             0           0
+/opt/airflow/dags/hello_world.py                           0           0
+================================================================================
+[2025-06-14T10:53:17.217+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_dag.py                             1           0  0.43s           2025-06-14T10:52:47
+/opt/airflow/dags/hello_1min.py                            1           0  0.43s           2025-06-14T10:52:47
+/opt/airflow/dags/hello_world.py                           1           0  0.21s           2025-06-14T10:52:48
+================================================================================
+[2025-06-14T10:53:45.810+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_dag.py                             1           0  0.34s           2025-06-14T10:53:19
+/opt/airflow/dags/hello_world.py                           1           0  0.21s           2025-06-14T10:53:19
+/opt/airflow/dags/hello_1min.py                            1           0  0.12s           2025-06-14T10:53:19
+================================================================================
+[2025-06-14T10:54:14.907+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.11s           2025-06-14T10:53:49
+/opt/airflow/dags/hello_dag.py                             1           0  0.11s           2025-06-14T10:53:49
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T10:53:50
+================================================================================
+[2025-06-14T10:54:35.192+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-06-14T10:57:42.541+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-06-14T10:57:42.543+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-06-14T10:57:42.544+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-06-14T10:57:42.545+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-06-14T10:57:42.584+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-06-14T10:57:42.660+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/hello_1min.py      44  0.03s             0           0
+/opt/airflow/dags/hello_dag.py       45  0.02s             0           0
+/opt/airflow/dags/hello_world.py                           0           0
+================================================================================
+[2025-06-14T10:58:12.171+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.19s           2025-06-14T10:57:42
+/opt/airflow/dags/hello_dag.py                             1           0  0.18s           2025-06-14T10:57:42
+/opt/airflow/dags/hello_world.py                           1           0  0.16s           2025-06-14T10:57:42
+================================================================================
+[2025-06-14T10:58:40.942+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.11s           2025-06-14T10:58:14
+/opt/airflow/dags/hello_dag.py                             1           0  0.10s           2025-06-14T10:58:14
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T10:58:14
+================================================================================
+[2025-06-14T10:59:10.321+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.12s           2025-06-14T10:58:45
+/opt/airflow/dags/hello_dag.py                             1           0  0.11s           2025-06-14T10:58:45
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T10:58:45
+================================================================================
+[2025-06-14T10:59:39.227+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.12s           2025-06-14T10:59:15
+/opt/airflow/dags/hello_dag.py                             1           0  0.11s           2025-06-14T10:59:15
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T10:59:15
+================================================================================
+[2025-06-14T11:00:08.224+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.11s           2025-06-14T10:59:46
+/opt/airflow/dags/hello_dag.py                             1           0  0.09s           2025-06-14T10:59:46
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T10:59:46
+================================================================================
+[2025-06-14T11:00:38.063+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.10s           2025-06-14T11:00:17
+/opt/airflow/dags/hello_dag.py                             1           0  0.10s           2025-06-14T11:00:17
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T11:00:17
+================================================================================
+[2025-06-14T11:01:07.169+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.11s           2025-06-14T11:00:48
+/opt/airflow/dags/hello_dag.py                             1           0  0.10s           2025-06-14T11:00:48
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T11:00:49
+================================================================================
+[2025-06-14T11:01:36.283+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.11s           2025-06-14T11:01:19
+/opt/airflow/dags/hello_dag.py                             1           0  0.09s           2025-06-14T11:01:19
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T11:01:20
+================================================================================
+[2025-06-14T11:02:06.441+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_world.py                           1           0  0.12s           2025-06-14T11:01:50
+/opt/airflow/dags/hello_1min.py                            1           0  0.11s           2025-06-14T11:01:50
+/opt/airflow/dags/hello_dag.py                             1           0  0.09s           2025-06-14T11:01:50
+================================================================================
+[2025-06-14T11:02:33.983+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.11s           2025-06-14T11:02:21
+/opt/airflow/dags/hello_dag.py                             1           0  0.10s           2025-06-14T11:02:21
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T11:02:21
+================================================================================
+[2025-06-14T11:02:43.977+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-06-14T11:02:44.012+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-06-14T11:03:04.481+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.12s           2025-06-14T11:02:52
+/opt/airflow/dags/hello_dag.py                             1           0  0.11s           2025-06-14T11:02:52
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T11:02:52
+================================================================================
+[2025-06-14T11:03:34.357+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.11s           2025-06-14T11:03:22
+/opt/airflow/dags/hello_dag.py                             1           0  0.10s           2025-06-14T11:03:22
+/opt/airflow/dags/hello_world.py                           1           0  0.09s           2025-06-14T11:03:22
+================================================================================
+[2025-06-14T11:13:07.141+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-06-14T11:13:07.142+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-06-14T11:13:07.143+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-06-14T11:13:07.144+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-06-14T11:13:07.180+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2025-06-14T11:13:07.265+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                           PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/hello_1min.py      50  0.04s             0           0
+/opt/airflow/dags/hello_dag.py       51  0.03s             0           0
+/opt/airflow/dags/hello_world.py                           0           0
+================================================================================
+[2025-06-14T11:13:37.049+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/hello_1min.py                            1           0  0.34s           2025-06-14T11:13:07
+/opt/airflow/dags/hello_dag.py                             1           0  0.32s           2025-06-14T11:13:07
+/opt/airflow/dags/hello_world.py                           1           0  0.17s           2025-06-14T11:13:07
+================================================================================
+[2025-06-14T11:13:56.317+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
